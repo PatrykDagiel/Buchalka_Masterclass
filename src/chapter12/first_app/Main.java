@@ -22,18 +22,18 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-//        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        GridPane root = new GridPane();
-        root.setAlignment(Pos.CENTER);
-        root.setHgap(10);
-        root.setVgap(10);
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 200, 300));
-        Label greeting = new Label("Welcome to JavaFX");
-        greeting.setTextFill(Color.GREEN);
-        greeting.setFont(Font.font("Times New Roman", FontWeight.BOLD, 70));
-
-        root.getChildren().add(greeting);
         primaryStage.show();
+//        GridPane root = new GridPane();
+//        root.setAlignment(Pos.CENTER);
+//        root.setHgap(10);
+//        root.setVgap(10);
+//        Label greeting = new Label("Welcome to JavaFX");
+//        greeting.setTextFill(Color.GREEN);
+//        greeting.setFont(Font.font("Times New Roman", FontWeight.BOLD, 70));
+//        root.getChildren().add(greeting);
+
     }
 }
