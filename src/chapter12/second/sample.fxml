@@ -1,21 +1,26 @@
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.HBox?>
-<HBox fx:controller="chapter12.second.Controller"
-      xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"
-        style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"
-        spacing="10">
-    <padding>
-        <Insets bottom="10" right="10"/>
-    </padding>
-    <Button text="Okay"/>
-    <Button text="Cancel"/>
-    <Button text="Help"/>
-</HBox>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:controller="chapter12.second.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="This is some label" alignment="center"
+               BorderPane.alignment="center"
+               style="-fx-border-color: green; -fx-border-width: 3; -fx-border-style: dashed"/>
+    </top>
+    <bottom>
+        <HBox spacing="10" alignment="top_right">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="Okay"/>
+            <Button text="Cancel"/>
+            <Button text="Help"/>
+        </HBox>
+    </bottom>
+</BorderPane>
     <!--<columnConstraints>-->
         <!--<ColumnConstraints percentWidth="50.0"/>-->
         <!--<ColumnConstraints percentWidth="90.0"/>-->
