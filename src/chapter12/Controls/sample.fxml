@@ -80,4 +80,18 @@
         showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
     <Spinner GridPane.rowIndex="2" GridPane.columnIndex="4" min="0" max="100" editable="true"/>
     <ColorPicker GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Accordion expandedPane="$tp3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+    <panes>
+        <TitledPane text="Titled Pane">
+            <Label text="Text in titled Pane"/>
+        </TitledPane>
+        <TitledPane text="Titled Pane">
+            <Label text="Text in titled Pane2"/>
+        </TitledPane>
+        <TitledPane fx:id="tp3" text="Titled Pane">
+            <Label text="Text in titled Pane3"/>
+        </TitledPane>
+    </panes>
+    </Accordion>
 </GridPane>
